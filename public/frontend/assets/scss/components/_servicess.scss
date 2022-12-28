@@ -1,0 +1,90 @@
+.servicess{
+    background: #0d0d0d;
+    padding: rem(100px) 0;
+    .service_container {
+        background: #171717;
+        padding: rem(70px) rem(30px);
+        border-radius: rem(10px);
+        position: relative;
+        transition: all 450ms linear;
+        overflow: hidden;
+        margin-bottom: rem(30px);
+        min-height: 350px;
+        @include transition(all 0.5s ease-out);
+
+        svg{
+            width: auto;
+            height: rem(50px);
+            path{
+                fill: color('light');
+            }
+        }
+
+        &:hover{
+            background: linear-gradient(45deg, color('secondry-bg'),color('primary-bg'));
+            img,
+            svg{
+                // margin-left: rem(30px);
+                transition: all 450ms linear;
+            }
+            &::after{
+                content: "";
+                background:url(../images/transparent_circle.png) center no-repeat;
+                background-size: contain;
+                position:absolute;
+                width: 70px;
+                height: 70px;
+                z-index: 0;
+                animation: downup 5s infinite linear;
+            }
+            @keyframes downup {
+                0%{
+                    bottom: 0;
+                    left: 0;
+                    width: 70px;
+                    height: 70px;
+                }
+                50%{
+                    bottom:50%;
+                    left:50%;
+                    // background:url(../images/eclipse_right.png) center no-repeat;
+                    // background-size: contain;
+                    width: 100px;
+                    height: 100px;
+                }
+                100%{
+                    bottom:100%;
+                    left:100%;
+                    // background:url(../images/eclipse_right.png) center no-repeat;
+                    // background-size: contain;
+                    width: 130px;
+                    height: 130px;
+                }
+                0%{
+                    bottom: 0;
+                    left: 0;
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+        h3{
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin: 0;
+            padding: rem(20px) 0;
+            font-size: rem(24px);
+        }
+        p{
+            font-size: rem(20px);
+            padding-right: rem(20px);
+        }
+    }
+    .service_a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}

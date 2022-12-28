@@ -1,0 +1,79 @@
+.job_detail{
+    padding: rem(100px) 0;
+    .job_d{
+        p{
+            font-size: rem(20px);
+            word-wrap: break-word;
+            padding-right: rem(25px);
+            line-height: 2;
+        }
+        h3{
+            font-size: rem(26px);
+            font-weight: 700;
+            color: #fff;
+        }
+        .respons_ul {
+            list-style: none;
+            padding: 0;
+            ul{
+                list-style: none;
+                li{
+                    color:var(--para-col);
+                    font-family: var(--para-font);
+                    font-size: rem(20px);
+                    position: relative;
+                    padding: 0 0px 10px 35px;
+                    &::before{
+                        content:"";
+                        position: absolute;
+                        background: url(../images/career_arrow.png) center no-repeat;
+                        background-size: contain;
+                        width: rem(22px);
+                        height: rem(22px);
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+
+        }
+    }
+    .hgroup.apply{
+        &::before{
+            left: 42%;
+        }
+    }
+    .row.form_apply{
+        .form-control{
+            padding: rem(22px);
+            height: auto;
+            background: #171717;
+            border: 0;
+            font-size: rem(20px);
+            color: var(--para-col);
+            &:focus{
+                box-shadow: 0 0 0 0.2rem color('primary-bg');
+            }
+        }
+        label{
+            color: #fff;
+            font-size: rem(20px);
+            font-family: var(--nexa-light);
+        }
+        .form-group{
+            margin-bottom: rem(25px);
+        }
+        button{
+            border: none;
+            background: linear-gradient(270deg, #2aca22, #12c288);
+            padding: 1.0625rem 2.5rem;
+            border-radius: 1.875rem;
+            color: #fff;
+            font-size: rem(20px);
+            font-weight: 700;
+            svg{
+                padding-left: rem(14px);
+            }
+        }
+    }
+}

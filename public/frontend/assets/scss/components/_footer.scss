@@ -1,0 +1,187 @@
+footer{
+    min-height: auto !important;
+    padding-top: rem(80px);
+    a{
+        font-family: var(--other-font);
+    }
+    p{
+        font-size: rem(22px);
+        @media (max-width:767px){
+            font-size: 16px;
+        }
+    }
+    .footer_logo{
+        img{
+            width: rem(224px);
+            height: rem(40px);
+        }
+    }
+    .hgroup{
+        margin-top: rem(40px);
+        h2{
+            font-size: rem(50px);
+            max-width:80%;
+        }
+        &::before{
+            left: rem(65px);
+            top: rem(-60px);
+            font-size: rem(105px);
+        }
+    }
+    .footer_form {
+        position: relative;
+        overflow: hidden;
+        .mybtn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            background: linear-gradient(270deg, #2aca22, #12c288);
+            padding: rem(24px) rem(40px);
+            border-radius: rem(50px);
+            color: #fff;
+            font-size: rem(20px);
+            font-weight: 600;
+            svg{
+                padding-left: 5px;
+            }
+        }
+        .form-control {
+            border-radius: rem(50px);
+            padding: rem(35px);
+            background: #262a27;
+            border-color: green;
+            color: var(--para-col);
+            font-size: rem(22px);
+            &::placeholder{
+                font-size: rem(22px);
+            }
+        }
+
+    }
+    .first_row{
+        padding: rem(30px) rem(0);
+        border-bottom: 1px solid;
+    }
+    .services{
+        border-bottom: 1px solid;
+    }
+    .footer_menu{
+        margin-bottom: rem(50px);
+
+        h4{
+            background: linear-gradient(270deg, #2aca22, #12c288);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: rem(22px);
+            font-weight: 700;
+            @media (max-width:767px){
+                font-size: 16px;
+            }
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            a{
+                text-decoration: none;
+                color: #a3a3a3;
+                font-weight: 500;
+                font-size: rem(18px);
+                transition: all 350ms linear;
+                position: relative;
+                &:hover{
+                    padding-left: rem(15px);
+                    &::after{
+                        content: "\f061";
+                        font-family: 'FontAwesome';
+                        position: absolute;
+                        left: 0;
+                        top: rem(4px);
+                        font-size: 12px;
+                        color: #2aca22;
+                        transition: all 350ms linear;
+                        animation: opac .8s 1 linear;
+                    }
+                    @keyframes opac {
+                        0%{
+                            opacity: 0;
+                            left: -20px;
+                        }
+                        100%{
+                            opacity: 1;
+                            left: 0;
+                        }
+                    }
+                }
+
+                @media (max-width:767px){
+                    font-size: 14px;
+                }
+            }
+            li{
+                padding: rem(5px) 0;
+            }
+        }
+
+    }
+    .footer_menu.middle{
+        padding-top: rem(30px);
+    }
+    .footer_social_area{
+        h4{
+            // background: linear-gradient(270deg, #2aca22, #12c288);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: rem(20px);
+            font-weight: 700;
+
+            @media (max-width:767px){
+                font-size: 16px;
+            }
+        }
+        .social_footer_nav{
+            display: flex;
+            padding-top: 30px;
+            a{
+                background: black;
+                display: block;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px 0;
+                font-size: 22px;
+                color: #fff;
+                border: 1px solid green;
+                margin-right: 5px;
+                transition: all 450ms ease;
+                &:hover{
+                    color: #2aca22;
+                }
+            }
+        }
+    }
+    .footer_email {
+        text-decoration: none;
+        color: green;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .footer_phone {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    p.m-0.py-3.text-center{
+        span{
+            a{
+                text-decoration: none;
+                color:green;
+            }
+        }
+    }
+}

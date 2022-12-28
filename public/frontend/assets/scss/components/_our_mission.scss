@@ -1,0 +1,30 @@
+.our_mission{
+    background-color: #0c0c0c;
+    padding: rem(80px) 0;
+    .mission_right{
+        
+        img{
+            width: -webkit-fill-available;
+            height: rem(400px);
+            object-fit: none;
+            border-radius: 0 rem(80px) 0 0;
+            margin-bottom: rem(20px);
+        }
+    }
+    .mission_sec{
+        .hgroup{
+            &::before{
+                left: 0;
+                -webkit-text-fill-color:transparent;
+            }
+            h2{
+                font-size: rem(55px);
+            }
+         }
+        p{
+            max-width: 87%;
+            font-size: rem(20px);
+            line-height: 1.8;
+        }
+    }
+}

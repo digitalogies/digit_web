@@ -1,0 +1,166 @@
+.offering{
+    padding: rem(120px) rem(0);
+    .offer_content{
+        padding-left: rem(80px);
+        hgroup{
+            h2{
+                font-size: rem(50px);
+            }
+            &::before{
+                font-size: rem(90px);
+                left: 0;
+            }
+        }
+    }
+    .offer_slider{
+        // slick css
+        .wrapper{
+            width:100%;
+            padding-top: 20px;
+            text-align:center;
+        }
+        .carousel{
+            width:100%;
+            margin:0px auto;
+        }
+        .offers{
+            // padding: rem(0) rem(0) rem(0) rem(14px);
+            position: relative;
+            border-radius: rem(0) rem(130px) rem(0) rem(40px);
+            overflow: hidden;
+            
+            .offers_content{
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                // border-radius: rem(0) rem(130px) rem(0) rem(40px);
+                display: flex;
+                align-items:flex-end;
+                // flex-direction: column;
+                justify-content: flex-start;
+                background: linear-gradient(-360deg, rgba(0, 0, 0, 0.7019607843),rgba(#000, 0.54), transparent);
+                @include transition(all 0.5s ease-out);
+                
+                .wrap{
+                    padding: rem(25px);
+                    width: 100%;
+                }
+
+                .icon{
+                    width: rem(60px) !important;
+                    height: rem(60px);
+                    border-radius: unset !important;
+
+                    svg{
+                        path{
+                            fill: color('light');
+                        }
+                    }
+                }
+                h3{
+                    font-size: rem(20px);
+                    font-weight: bold;
+                    padding-top: rem(20px);
+                    padding-left: rem(10px);
+
+                    @media (max-width:767px){
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &:hover{
+                .offers_content{
+                    // background: linear-gradient(360deg, rgba(28, 163, 18, 0.89), rgba(36, 149, 28 , 0.42), transparent);
+                    background: linear-gradient(360deg, rgba(color('primary-bg'),0.8), rgba(color('secondry-bg'),0.8), transparent);
+                    cursor: pointer;
+                    @include transition(all 0.5s ease-out);
+                    // transition: all 350ms linear;
+                }
+            }
+        }
+        .slick-slide img{
+            width:100%;
+            // 
+        }
+        .slick-prev, .slick-next{
+            background: color('light');
+            border-radius: rem(15px);
+            border-color: transparent;
+            width: rem(60px);
+            height: rem(60px);
+            border-radius: 50%;
+            @include transition(all 0.1s ease-out);
+            
+            svg{ 
+                width: rem(52px);
+                height: rem(52px);
+
+                path{
+                    fill: color('primary-bg');
+                    @include transition(all 0.1s ease-out);
+                }
+            }
+
+            &:hover{
+                background: linear-gradient(270deg, #2aca22, #12c288);
+
+                svg{
+                    path{
+                        fill: color('primary-fg');
+                    }
+                }
+            }
+        }
+        
+        .slick-list{
+            padding: 0 !important;
+        }
+        .slick-next{
+            left: -20% !important;
+            top: 70% !important;
+            // background: url(../images/slick_before.png) center no-repeat;
+            // background-size: contain;
+            // background: color('light');
+            // transform:rotate(180deg);
+            // @include transition(all 0.1s ease-out);
+
+            &:before{
+                display:none;
+            }
+            &:hover{
+                // background: linear-gradient(270deg, #2aca22, #12c288);
+                // background: url(../images/slick_next.png) center no-repeat;
+                // background-size: contain;
+                // width: rem(50px);
+                // height: rem(50px);
+                // transform:rotate(0deg);
+            }
+        }
+        .slick-prev{
+            left: -26%;
+            top: 70% !important;
+            // background: url(../images/slick_before.png) center no-repeat;
+            // background-size: contain;
+            // width: rem(50px);
+            // height: rem(50px);
+            // @include transition(all 0.1s ease-out);
+            &:before{
+                display:none;
+            }
+            &:hover{
+                // background: url(../images/slick_next.png) center no-repeat;
+                // background-size: contain;
+                // width: rem(50px);
+                // height: rem(50px);
+                // transform:rotate(180deg);
+            }
+        }
+        // slick css
+    }
+    
+}

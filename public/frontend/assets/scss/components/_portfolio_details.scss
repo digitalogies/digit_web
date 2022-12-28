@@ -1,0 +1,118 @@
+.portfolio_details{
+    padding: rem(100px) 0;
+    background:#0d0d0d;
+    
+    .solutions_box{
+        .solution_ul{
+            list-style: none;
+            padding: 0;
+            li{
+                position: relative;
+                color: var(--para-col);
+                font-family: var(--para-font);
+                font-weight: 500;
+                font-size: rem(20px);
+                padding: rem(10px) rem(0px) rem(10px) rem(45px);
+                &::before{
+                    content:"";
+                    position: absolute;
+                    background: url(../images/solution_li.png) center no-repeat;
+                    background-size: contain;
+                    left: 0;
+                    top: rem(8px);
+                    width: rem(25px);
+                    height: rem(25px);
+                }
+            }
+        }
+    }
+
+    .portfolio-hero-img{
+        width: 100%;
+        border-radius: rem(15px);
+        overflow: hidden;
+        position: relative;
+
+        img{
+            aspect-ratio: 1.8/1;
+            width: 100%;
+            object-fit: cover;
+            border-radius: rem(15px);
+            overflow: hidden;
+        }
+    }
+
+    .project_detail{
+        h3{
+            font-family:var(--main-heading-font);
+            font-weight: 700;
+            font-size: rem(36px);
+            color: #fff;
+            margin: 0;
+            padding: rem(35px) 0;
+        }
+        p{
+            font-size: rem(20px);
+            line-height: 1.8;
+        }
+    }
+    .input-group{
+        margin-top: rem(45px);
+    }
+    .bootstrap-tagsinput{
+        background: #0d0d0d;
+        border: none;
+        .tag {
+            margin-right: rem(2px);
+            color: white !important;
+            background-color: #2e2e2e;
+            padding: rem(15px) rem(20px);
+            border-radius: rem(3px);
+            font-size: rem(18px);
+            text-transform: uppercase;
+        }
+      input{
+        color: var(--para-col);
+      }
+    }  
+    .information_box{
+        padding: rem(40px);
+        background: #151515;
+        border-radius: rem(15px);
+        margin-top: rem(40px);
+        h4{
+            font-family: 'Nexa';
+            color: #fff;
+            font-size: rem(40px);
+            font-weight: 700;
+        }
+        ul.info {
+            padding: 0;
+            list-style: none;
+            li{
+                font-family: 'Nexa';
+                color: #fff;
+                font-size: rem(20px);
+                font-weight: 600;
+                padding: rem(15px) 0;
+                span{
+                    padding-left: rem(20px);
+                    color: var(--para-col);
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+.full_size_portfolio{
+    img{
+        border-radius:rem(10px);
+        width:100%;
+        height:rem(700px);
+        object-fit: cover;
+        object-position: center;
+    }
+}

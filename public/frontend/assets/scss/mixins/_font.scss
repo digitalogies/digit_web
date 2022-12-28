@@ -1,0 +1,5 @@
+@mixin font($weight,$lineHeight,$fontSize,$fontFamily) {
+    font: $weight fontSize($fontSize)/#{$lineHeight} fontFamily($fontFamily);
+}
+
+// @include font(normal,1.2,'f12','base');

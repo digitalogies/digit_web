@@ -1,0 +1,34 @@
+.modal{
+
+    &-thankyou{
+        .modal-content{
+            background: linear-gradient(270deg, color('primary-bg'),color('secondry-bg'));
+            text-align:center;
+            font-size: rem(30px);
+            color: color('light');
+            border-radius: rem(35px);
+
+            .modal-title{
+                font-size: rem(120px);
+                font-weight: 800;
+                color: color('light');
+                margin-bottom:rem(10px);
+            }
+
+            #thanksIcon{
+                width: rem(236px);
+                height: auto;
+                margin: rem(50px) auto;
+            }
+
+            p{
+                color: color('light');
+                font-size: rem(30px);
+                margin-top: rem(10px);
+                margin-bottom: rem(20px);
+            }
+
+        }
+    }
+
+}

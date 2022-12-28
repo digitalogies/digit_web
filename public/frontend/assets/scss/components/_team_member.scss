@@ -1,0 +1,105 @@
+.team_member{
+    padding: rem(120px) rem(0);
+    .hgroup{
+        h2{
+            background: unset !important;
+            -webkit-text-fill-color: #fff;
+        }
+        &::before{
+            left: 40%;
+        }
+    }
+    .member_box{
+        transition: all 0.5s ease-in;
+        text-align: left;
+        &:hover img{
+            width: 80%;
+            transition: all 350ms linear;
+            object-fit: cover;
+        }
+        &:hover .social_icons_wrap{
+            display: flex !important;
+            opacity: 1;
+            transition: all 100ms linear;
+            animation: opacty .5s 1 linear;
+        }
+        @keyframes opacty {
+            0%{opacity: 0.2; bottom: rem(30px);}
+            50%{opacity: 0.5; bottom: rem(40px);}
+            75%{opacity: 0.7; bottom: rem(50px);}
+            100%{opacity: 1; bottom: rem(60px);}
+        }
+        img{
+            width: 100%;
+            border-radius: rem(10px) rem(10px) rem(10px) rem(50px);
+            transition: all 350ms linear;
+            height:rem(556px);
+            object-fit: cover;
+        }
+        h4{
+            color: #fff;
+            font-size: rem(20px);
+            margin: 0;
+            margin-top: rem(20px);
+            font-family: var(--other-font);
+            font-weight: 600;
+
+            @media (max-width:767px){
+                font-size: 16px;
+            }
+        }
+        span{
+            color: green;
+            font-weight: 500;
+            font-size: rem(18px);
+
+            @media (max-width:767px){
+                font-size: 14px;
+            }
+        }
+        .social_icons_wrap{
+            position: absolute;
+            right: rem(18px);
+            bottom: rem(60px);
+            opacity: 0;
+            // z-index: -1;
+            // display: none !important;
+            a{
+                width: rem(55px);
+                height: rem(55px);
+                text-align: center;
+                background: linear-gradient(270deg, #2aca22, #12c288);
+                text-decoration: none;
+                color: #fff;
+                border-radius: 50%;
+                margin-top: rem(15px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: rem(20px);
+                }
+            }
+        }
+    }
+    .wrapper{
+        width:100%;
+        padding-top: rem(40px);
+        text-align:center;
+    }
+    .member_slider{
+        width:100%;
+        margin:0px auto;
+    }
+    .slick-list{
+        padding: rem(0) !important;
+    }
+    .slick-dots li button:before{
+        color: #333333;
+        font-size: rem(10px);
+    }
+    .slick-dots li.slick-active button:before{
+        color: #2aca22;
+        font-size: rem(10px);
+    }
+}

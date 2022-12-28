@@ -1,0 +1,44 @@
+.job_section{
+    padding: rem(100px) 0;
+    .hgroup{
+        &::before{
+            left: 40%;
+        }
+    }
+    .col-md-4{
+        padding: rem(15px);
+        .career_box {
+            background: #171717;
+            padding: 20px;
+            border-radius: 10px;
+            .career_head{
+                img{
+                    width: 60px;
+                    height: auto;
+                }
+                .career_tile{
+                    h4{
+                        color: #fff;
+                        font-family: var(--main-heading-font);
+                        font-size: rem(28px);
+                        font-weight: 700;
+                        margin: 0;
+                    }
+                    span{
+                        color: #d1d1d1;
+                        font-size: rem(20px);
+                        font-weight: 500;
+                    };
+                }
+            }
+            .career_body{
+                p{
+                    font-size: rem(21px);
+                    margin-top: rem(20px);
+                    margin-bottom: rem(40px);
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+}

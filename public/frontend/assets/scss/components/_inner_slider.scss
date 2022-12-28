@@ -1,0 +1,31 @@
+.inner_slider{
+    .testimonial{
+        flex-direction: row-reverse;
+        .testmnl_right{
+            
+            justify-content: start;
+            img{
+                border-radius: rem(0) rem(240px) rem(260px) rem(260px);
+                &:nth-child(2){
+                    right: rem(50px);
+                    left: unset;
+                }
+            }
+        }
+        .testmnl_left{
+            padding-left: rem(80px);
+            .tstmnl_para{
+                max-width: unset;
+                font-size: rem(26px);
+            }
+        }
+    }
+    .slick-next{
+        left: unset !important;
+        right: 48% !important;
+    }
+    .slick-prev{
+        left: unset !important;
+        right: 52% !important;
+    }
+}

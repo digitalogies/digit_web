@@ -1,0 +1,123 @@
+.need_seo{
+    padding: rem(40px) rem(0);
+
+    &-row{
+
+    }
+
+    &-left-side{
+        @media (max-width:767px){
+            order: 2;
+        }
+    }
+
+    &-right-side{
+        @media (max-width:767px){
+            order: 1;
+            margin-bottom: 50px;
+        }
+    }
+
+    .hgroup{
+        .hgroup-title{
+            font-size: rem(58px);
+        }
+        &::before{
+            top: rem(-45px);
+            color: transparent;
+            -webkit-text-stroke-width: rem(0.5px);
+            -webkit-text-stroke-color: #2aca22;
+            background-clip: unset;
+            -webkit-text-fill-color: #010101;
+            font-weight: 800;
+            left: rem(35px);
+            filter:brightness(0.3);
+            font-size: rem(80px);
+        }
+    }
+    .side_image{
+        img{
+            width: 100%;
+        }
+    }
+    .row{
+        .col-md-8{
+            padding-left: rem(75px);
+            .seo_content{
+                p{
+                    font-size: rem(22px);
+
+                    @media (max-width:767px){
+                        font-size: 16px;
+                    }
+                }
+            }
+            .row{
+                padding: rem(25px) rem(20px);
+                background: linear-gradient(45deg, #090909, #090909);
+                border-radius: rem(15px);
+                transition: all 1s ease;
+                position: relative;
+                &:hover{
+                    // box-shadow: 2px 4px 5px 2px #26c93036;
+                    &::after{
+                        content: "";
+                        background: url(../images/eclipse_combine.png) center no-repeat;
+                        background-size: contain;
+                        width: 160px;
+                        height: 100px;
+                        position:absolute;
+                        right:0;
+                        top:0;
+                        opacity: 0;
+                        animation: seoanim 2s 1 linear;
+                    }
+                    @keyframes seoanim {
+                        0%{
+                            opacity: 0.2;
+                            transform: rotate(-45deg);
+                            top: 0;
+                        }
+                        50%{
+                            opacity: 0.5;
+                            transform: rotate(-90deg);
+                            top: 50%;
+                        }
+                        75%{
+                            opacity: 0.3;
+                            transform: rotate(-135deg);
+                            top: 75%;
+                        }
+                        100%{
+                            opacity: 0.1;
+                            transform: rotate(-180deg);
+                            top: 100%;
+                        }
+                        
+                    }
+                }
+                .seo_box{
+
+                    h3{
+                        color: #fff;
+                        margin: 0;
+                        padding: rem(15px) rem(0);
+                        font-weight: bold;
+                        font-size: rem(24px);
+                    }
+                    p{
+                        font-size: rem(22px);
+                        line-height: 1.7;
+                        padding-right: rem(3px);
+                    }
+                    a{
+                        margin-top: rem(40px);
+                    }
+                }
+            }
+        }
+    }
+    h3{
+        color: var(primary-fg);
+    }
+}

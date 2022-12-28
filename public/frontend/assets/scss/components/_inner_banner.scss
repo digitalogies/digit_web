@@ -1,0 +1,40 @@
+.inner_banner{
+    background: url(../images/inner_background.png) no-repeat;
+    background-position: 17% 65%;
+    background-size: contain;
+    padding: rem(200px) 0;
+
+    @media (max-width:767px){
+        padding-bottom: rem(72px);
+    }
+
+    .banner_content{
+        h1{
+            background: linear-gradient(270deg, #2aca22, #12c288);
+            -webkit-background-clip: text !important;
+            background-clip:text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            position: relative;
+            font-size: rem(145px);
+            font-family: var(--main-heading-font);
+            margin: 0;
+
+            @media (max-width:767px){
+                font-size: 42px;
+                margin-bottom: 15px;
+            }
+
+        }
+        p{
+            font-size: rem(22px);
+            font-family: var(--nexa-light);
+            span{
+                margin: 0 rem(20px);
+                color: green;
+            }
+        }
+}
+
+
+}

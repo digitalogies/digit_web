@@ -1,0 +1,111 @@
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css');
+// @import '../css/all.css';
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'variables';
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ABABAB;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(270deg, #12A10A, #12C288);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2ACA22, #12C288);
+}
+// nexa font family
+@font-face {
+    font-family: 'Nexa';
+    src: url('../font/NexaBold.woff2') format('woff2'),
+        url('../font/NexaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+// @font-face {
+//     font-family: 'Nexa';
+//     src: url('../font/Nexa-Bold.woff2') format('woff2'),
+//         url('../font/Nexa-Bold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../font/Nexa-Light.woff2') format('woff2'),
+        url('../font/Nexa-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexaRegular';
+    src: url('../font/NexaRegular.woff2') format('woff2'),
+        url('../font/NexaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// nexa font family
+
+@import 'bootstrap/bootstrap';
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 1092px, //992px
+//   xl: 1600px //1200
+// ) !default;
+
+
+@import 'functions/rem',
+        'functions/color',
+        'functions/fontFamily',
+        'functions/fontSize';
+
+@import 'mixins/arrow',
+        'mixins/gradient',
+        'mixins/transition',
+        'mixins/font',
+        'mixins/headings';
+
+@import './components/general',
+        './components/header',
+        './components/forms',
+        './components/footer',
+        './components/section-hero',
+        './components/seo-section',
+        './components/offering-section',
+        './components/creative_projects',
+        './components/creative_things',
+        './components/testimonials',
+        './components/team_member',
+        './components/responsive',
+        './components/inner_banner',
+        './components/our_mission',
+        './components/inner_slider',
+        './components/job_section',
+        './components/job_detail',
+        './components/contact_us',
+        './components/portfolio',
+        './components/portfolio_details',
+        './components/servicess',
+        './components/service_details',
+        './components/preloader',
+        './components/modals';
+
+
+
+@import 'pages/home';

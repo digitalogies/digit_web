@@ -1,0 +1,70 @@
+
+:root{
+    --bg: #010101;
+    --para-col:#cccccc;
+    --main-heading-font:'Nexa';
+    --para-font:'Lato', sans-serif;
+    --other-font:'Poppins', sans-serif;
+    --nexa-light:'NexaRegular';
+    --menu-progress: 0%;
+}
+
+$colors:(
+    primary-bg:     #2aca22, //#7b3da0
+    primary-fg:     #ffffff,
+    secondry-bg:    #12c288,
+    secondry-fg:    #ffffff,
+    base:           #545454,
+    heading:        #242424,
+    border:         #dddddd,
+    light:          #ffffff,
+    dark:           #000000,
+    gray:           #e4e4e4,
+    gray-light:     #f5f5f5,
+    ice:            #f8f9ff,
+    warning:        #ffb900,
+    success:        #00d784,
+    danger:         #f00000,
+);
+
+$fonts: (
+    base:       'Lato'#{', sans-serif'}, //Lato
+    heading:    'Nexa'#{', sans-serif'}, //Raleway
+);
+
+$sizes: (
+    f1: 5.625rem, // 90
+    f2: 3.75rem, // 60
+    f3: 3rem, // 48
+    f4: 2.5rem, // 40
+    f5: 2.1875rem, // 35
+    f6: 1.875rem, // 30
+    f7: 1.5625rem, // 25
+    f8: 1.375rem, // 22
+    f9: 1.25rem, // 20
+    f10: 1.125rem, // 18
+    f11: 1rem, // 16
+    f12: 0.875rem, // 14
+
+
+    
+    xl: 2.625rem, // 42
+    lg: 2.5rem, //40
+    md: 2.1875rem, // 35
+    nr: 1.875rem, //30
+    sm: 1.375rem, //22
+    xs: 1rem, // 16
+);
+
+
+$border-radius: 0.9375rem; // 15px
+$primary: #7b3da0;//map-get($colors, 'primary-bg');
+$grid-gutter-width: 30px !default;
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 780px,
+  lg: 960px,
+  xl: 1030px //1140px
+) !default;
